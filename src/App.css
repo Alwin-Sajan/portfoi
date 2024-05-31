@@ -37,4 +37,14 @@
     font-weight: 900;
     font-style: normal;
   }
-  
+  .Main{
+    --tw-gradient-from: #FFBF1C var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(255 191 28 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    overflow-x: hidden;
+  }

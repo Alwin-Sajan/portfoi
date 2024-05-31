@@ -2,12 +2,16 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Reveal from './components/Reveal';
-import useAnim from './components/useAnim';
+// import useAnim from './components/useAnim';
+import { motion, spring } from 'framer-motion';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 const App = () => {
+
   return (
     <>
-      <div className="bg-[#FFFF80] h-auto ">
+      <div className=" h-auto Main">
         <Navbar />
 
         <div className="w-screen mb-10 mt-24 flex justify-center items-center">
@@ -35,16 +39,78 @@ const App = () => {
             </Reveal>
           </div>
           <Reveal>
-            <img src="https://avatars.githubusercontent.com/u/116751380?v=4" className='bounded-full ml-60 w-60 border-solid border-8 border-[#FFBF1C] rounded-full' alt="Alwin Sajan" />
+
+            <motion.img
+              initial={{
+                top: '-150px',
+
+              }}
+              animate={{
+                y: '0px',
+
+
+              }}
+
+              transition={{
+                duration: 0.5,
+                delay: 1,
+                type: spring
+              }}
+
+
+
+              src="https://avatars.githubusercontent.com/u/116751380?v=4"
+              className='bounded-full ml-60 w-60 border-solid border-8 border-[#FFBF1C] rounded-full'
+              alt="Alwin Sajan"
+            />
           </Reveal>
+
         </div>
 
 
-        <useAnim />
+
 
         <div className='mt-55 flex justify-center h-screen items-center'>
-          <div className='w-[80%] bg-[#FF5580] h-[20vw]'></div>
+
+          <div className='w-[80%] bg-[#FFBF1C] h-[20vw] rounded-2xl' id='About'>
+            <Reveal>
+              <h2 className='text-3xl font-bold roboto-black  w-full text-center pt-10 pl-4'>About Me</h2>
+              <p className='pl-8 pt-2 font-medium'>I am Alwin Sajan</p>
+            </Reveal>
+          </div>
         </div>
+
+
+        <div className='flex w-screen h-screen justify-between'>
+          <div className='w-[40vw] h-[70vh] bg-[#FF5580]'>
+
+          </div>
+          <div className='w-[15vw] h-[100vh] bg-[#FFFF80]'>
+
+          </div>
+          <div className='mt-[30vh] w-[40vw] h-[70vh] p-4 bg-[#ffbf1c]'>
+            <Reveal>
+              <h3 className=''>My works</h3>
+            </Reveal>
+          </div>
+
+        </div>
+    
+        <div className=' bg-[#ff5580] w-[100vw] h-[50vh] rounded p-8 my-10'>
+          {/* <Reveal> */}
+            <ul className='flex justify-center items-center w-[100%] gap-8 overflow-hidden '>
+              <li className='w-60 bg-white h-60'>hi</li>
+              <li className='w-60 bg-white h-60'>hi</li>
+              <li className='w-60 bg-white h-60'>hi</li>
+              
+            </ul>
+          {/* </Reveal> */}
+        </div>
+
+
+        <Contact />
+
+        <Footer />
       </div>
     </>
   );
