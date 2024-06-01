@@ -31,8 +31,8 @@ const Navbar = () => {
       <ul className='w-full flex justify-center items-center'>
         <li className='inline roboto-regular text-base'><a href="">Home</a></li>
         <li className='ml-[40%] inline-block roboto-regular text-base'><a href="#About">About</a></li>
-        <li className='ml-5 roboto-regular inline-block text-base'><a href="">Works</a></li>
-        <li className='ml-5 roboto-regular inline-block text-base'><a href="">Contact</a></li>
+        <li className='ml-5 roboto-regular inline-block text-base'><a href="#works">Works</a></li>
+        <li className='ml-5 roboto-regular inline-block text-base'><a href="#contact">Contact</a></li>
         <li className='ml-5  inline-block text-2xl'><button onClick={colorD}><MdDarkMode /></button></li>
 
       </ul>

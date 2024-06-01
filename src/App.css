@@ -3,48 +3,72 @@
 @tailwind utilities;
 
 .roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  .Main{
-    --tw-gradient-from: #FFBF1C var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(255 191 28 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  }
-  *{
-    box-sizing: border-box;
-  }
-  body{
-    overflow-x: hidden;
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+.fira-400 {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: small;
+  font-style: normal;
+}
+
+.Main {
+  --tw-gradient-from: #FFBF1C var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 191 28 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.boxshdr {
+  -webkit-box-shadow: -12px -15px 0px 1px rgb(62, 63, 48);;
+  -moz-box-shadow: -12px -15px 0px 1px rgb(62, 63, 48);;
+  box-shadow: -12px -15px 0px 1px rgb(62, 63, 48);;
+}
+
+.boxshdl {
+  -webkit-box-shadow: 12px -15px 0px 1px rgb(62, 63, 48);
+  -moz-box-shadow: 12px -15px 0px 1px rgb(62, 63, 48);;
+  box-shadow: 12px -15px 0px 1px rgb(62, 63, 48);;
+}
