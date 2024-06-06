@@ -15,16 +15,28 @@ const App = () => {
     setDarkMode(prevMode => !prevMode);
   };
 
+  const dcl = ['#092635',
+  '#1B4242',
+  '#5C8374',
+  '#9EC8B9'];
+
+  const Lcl = ['#FFFF80',
+    '#FFAA80',
+    '#FF5580',
+    '#FF0080',
+  'white']
+
+
   return (
     <>
-      <div className={`h-auto Main w-screen ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
-        {window.innerWidth > 500 ? <Navbar /> : <SideNavbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
+      <div className={`h-auto Main w-screen ${darkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+        {window.innerWidth > 500 ? <Navbar  darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> : <SideNavbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
 
-        <div className="w-screen mb-10 mt-24 flex justify-center items-center">
+        <div className="w-screen mb-28 mt-24 flex justify-center items-center">
           <div>
             <Reveal>
               <h4 className='text-[#FF5580] text-xl roboto-bold'>Hey, I'm</h4>
-              <h1 className="text-6xl text-[#FF5580] p-2 roboto-bold">Alwin Sajan!</h1>
+              <h1 className={`text-6xl ${darkMode?'text-[#ff5555]':'text-[#FF5580]'} p-2 roboto-bold`}>Alwin Sajan!</h1>
               <ul className='inline-block'>
                 <li className='w-8 h-8 inline-block'>
                   <a href="https://www.linkedin.com/in/alwin-sajan-102177255/" target='_blank' rel='noopener noreferrer'>
@@ -50,7 +62,7 @@ const App = () => {
               animate={{ y: [0, 10, 0], scale:[0.96,1,0.97] }}
               transition={{ duration: 4, repeat: Infinity, repeatType: "reverse" }}
               src="https://avatars.githubusercontent.com/u/116751380?v=4"
-              className='bounded-full ml-56 w-60 border-solid border-8 m-4 border-[#FFBF1C] rounded-full'
+              className={`bounded-full ml-56 w-60 border-solid border-8 m-4 ${darkMode?'border-[#ff5555]':'border-[#FFBF1C]'} rounded-full`}
               alt="Alwin Sajan"
             />
           </Reveal>
@@ -59,7 +71,7 @@ const App = () => {
         <div className='mt-60 flex w-screen h-screen justify-between mb-10 ' id='About'>
           <div className='w-[40vw] h-[70vh] bg-[#FFBF1C] text-[#544c3b] boxshdl p-4 -ml-1 pl-8 rotate-1'>
             <Reveal>
-              <h2 className='text-3xl font-bold roboto-black  w-full text-center  pl-4'>About Me</h2>
+              
               <p className='py-8 pt-4 fira-400'>Welcome to my digital realm! I am a passionate and
                 versatile developer, currently pursuing my B.Tech in Computer Science at Toc H Institute
                 of Science & Technology. Navigating the dynamic landscape of technology, I find joy in
@@ -77,9 +89,25 @@ const App = () => {
             </Reveal>
           </div>
 
-          <div className='w-[14vw] h-[100vh] bg-[#FFFF80] '>
-            <h2 className='text-3xl font-bold roboto-black text-black  w-full text-center pt-8 '>Skills</h2>
-            <ul className='mt-8 grid justify-center gap-8 w-full '>
+       
+          <div>
+          <div className='h-[30vh] p-1'>
+          <h2 className={`text-7xl font-bold modak-regular w-full mt-8 rotate-2 ${darkMode ?'text-white':'text-[#544c3b]'} `}>About Me</h2>
+          </div>
+          <div className=' w-[40vw] h-[70vh] p-4 bg-[#ffd51c] boxshdr flex '>
+            <img className='w-auto mt-4 ml-4 h-[80%] rounded-lg inline-block rotate-2 ' src="https://media.licdn.com/dms/image/D5622AQEaqLhE0r5mSw/feedshare-shrink_800/0/1686475000708?e=2147483647&v=beta&t=rno5VrFq6ZoHZucRClzMJEqYAx53d1hzYShDcXXe7-E" alt="" />
+            <div>
+              <h3 className='m-8 mt-16 inline-block boxshdr bg-[#ffff80] text-[#544c3b] p-4 h-auto '>CSE Undergrad  Front-End Developer</h3>
+              <h3 className='m-8 mt-4 inline-block boxshdr bg-[#ffff80] text-[#544c3b] p-4 h-auto'>B tech 2yr student at Toc H Institute
+            of Science & Technology</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div className='w-full h-auto bg-[#FFFF80] mt-16 pt-8 pr-4 py-28'>
+            <h2 className='text-3xl font-bold roboto-black text-[#544c3b]  w-full text-center  pt-8 '>Skills</h2>
+            <ul className='mt-16 grid justify-center grid-cols-4 gap-8  w-full px-28 '>
               <li className='bg-[#FFBF1C] text-center p-2 min-w-[80%] roboto-regular rounded'>Java</li>
               <li className='bg-[#FFBF1C] text-center p-2 min-w-[80%] roboto-regular rounded'>Python</li>
               <li className='bg-[#FFBF1C] text-center p-2 min-w-[80%] roboto-regular rounded'>Reactjs</li>
@@ -90,21 +118,11 @@ const App = () => {
             </ul>
           </div>
 
-          <div className='mt-[30vh] w-[40vw] h-[70vh] p-4 bg-[#ffd51c] boxshdr flex -rotate-1'>
-            <img className='w-auto mt-4 ml-4 h-[80%] rounded-lg inline-block rotate-1 boxshdr' src="https://media.licdn.com/dms/image/D5622AQEaqLhE0r5mSw/feedshare-shrink_800/0/1686475000708?e=2147483647&v=beta&t=rno5VrFq6ZoHZucRClzMJEqYAx53d1hzYShDcXXe7-E" alt="" />
-            <div>
-              <h3 className='m-8 mt-16 inline-block boxshdr bg-[#ffff80] text-black p-4 h-auto'>CSE Undergrad  Front-End Developer</h3>
-              <h3 className='m-8 mt-4 inline-block boxshdr bg-[#ffff80] text-black p-4 h-auto'>B tech 2yr student at Toc H Institute
-            of Science & Technology</h3>
-            </div>
-          </div>
-        </div>
-
         <Works />
 
         <div className='bg-[#ffff80] w-[100vw] h-[50vh] rounded mt-10 p-8 my-10 flex items-center'>
-          <h3 className='roboto-black ml-28 text-3xl'>Services</h3>
-          <ul className='flex justify-center items-center w-[100%] gap-8 overflow-hidden'>
+          <h3 className='roboto-black ml-28 text-3xl text-[#544c3b] '>Services</h3>
+          <ul className='flex justify-center items-center w-[100%] text-[#544c3b]  gap-8 overflow-hidden'>
             <li className='w-60 h-auto '>
               <img className='rounded-lg' src="https://media.istockphoto.com/id/1402285381/vector/d-logo-design-and-template-creative-d-icon-initials-based-letters-in-vector.jpg?s=612x612&w=0&k=20&c=tIjfOJgtpV_92-Zw0lUFgguWYameGe4DJdAslBSJdPw=" alt="" />
               <p className='p-2 roboto-bold text-center'>Design</p>

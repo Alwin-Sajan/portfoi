@@ -38,6 +38,12 @@
   font-style: normal;
 }
 
+.modak-regular {
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .fira-400 {
   font-family: "Fira Code", monospace;
