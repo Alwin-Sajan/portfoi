@@ -8,10 +8,10 @@ import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className='h-auto w-screen  bg-[#5f5f43] grid col-span-1' id='contact'>
+    <div className='h-auto lg:w-screen max-md:w-full  bg-[#5f5f43] grid col-span-1' id='contact'>
       <h2 className='text-center text-3xl pt-8 roboto-black text-[#ffbf1c]'>Contacts</h2>
       <div className="p-16 mr-4">
-        <div className="grid gap-4 grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
           <Card
             title="Github"
             target='_blank'
@@ -31,8 +31,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center  min-h-screen ">
-        <div className="w-[80%]  bg-white rounded-lg shadow-lg p-16 px-60 ">
+      <div className="flex justify-center items-center max-md:w-full  min-h-screen ">
+        <div className="w-[80%]  bg-white rounded-lg shadow-lg p-16 lg:px-60 ">
           <form
             className="space-y-6 "
             action="https://docs.google.com/forms/d/e/1FAIpQLSd8ox-n7pWXsUd2XB_mjSD0P8xvSwvPtN620EgkYfOQh7zJoA/formResponse"

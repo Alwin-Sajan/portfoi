@@ -3,9 +3,9 @@ import Reveal from './Reveal'
 
 const Works = () => {
   return (
-    <div className='h-screen w-screen bg-[#ffbf1c] text-[#ffff80]' id='works'>
+    <div className='lg:h-screen max-md:pb-16 w-screen bg-[#ffbf1c] text-[#ffff80]' id='works'>
       <h2 className='text-center text-3xl pt-16 roboto-black'>Works</h2>
-      <ul className='flex justify-center items-center w-auto  pt-20 gap-8 overflow-auto'>
+      <ul className='lg:flex max-md:grid max-md:h-auto justify-center items-center w-auto  pt-20 gap-8 overflow-auto'>
 
         <Reveal>
           <li className='w-60  h-min-[80%]'>
