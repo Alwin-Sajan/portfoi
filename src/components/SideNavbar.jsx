@@ -22,6 +22,7 @@ const SideNavbar = ({ darkMode, toggleDarkMode }) => {
           <a href="/">
             <MdHome size={28} className={`${darkMode ? 'text-white' : 'text-gray-800'}`} />
           </a>
+          
         </li>
         <li className="mb-6">
           <a href="#About">
