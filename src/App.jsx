@@ -33,7 +33,7 @@ const App = () => {
         {window.innerWidth > 500 ? <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> : <SideNavbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
 
         <div className="lg:w-screen max-md:grid max-md:h-[50vh] box-border max-md:mt-20 mb-28 lg:mt-24 lg:flex justify-center  items-center">
-          <div className='w-full'>
+          <div >
             <Reveal>
               <h4 className='text-[#FF5580] text-xl roboto-bold'>Hey, I'm</h4>
               <h1 className={`lg:text-6xl max-md:text-4xl ${darkMode ? 'text-[#ff5555]' : 'text-[#FF5580]'} max-md:w-fit max-md:px-8 p-2 roboto-bold`}>Alwin Sajan!</h1>
@@ -68,7 +68,7 @@ const App = () => {
           </Reveal>
         </div>
 
-        <div className='mt-60 lg:flex w-screen lg:h-screen justify-between mb-10 max-md:px-0 ' id='About'>
+        <div className='mt-60 lg:pt-24 lg:mb-36 lg:flex w-screen lg:h-screen justify-between mb-10 max-md:px-0 ' id='About'>
 
           <div className=' max-md:mx-8 lg:w-[40vw] lg:h-[70vh] bg-[#FFBF1C] text-[#544c3b] boxshdl p-4 -ml-1 pl-8 lg:rotate-1'>
             <Reveal>
