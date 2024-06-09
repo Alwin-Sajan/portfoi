@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className='h-auto lg:w-screen max-md:w-full  bg-[#5f5f43] grid col-span-1' id='contact'>
       <h2 className='text-center text-3xl pt-8 roboto-black text-[#ffbf1c]'>Contacts</h2>
-      <div className="p-16 mr-4">
+      <div className="lg:p-16 max-md:pt-8 max-md:px-8 lg:mr-4">
         <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
           <Card
             title="Github"
@@ -31,8 +31,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center max-md:w-full  min-h-screen ">
-        <div className="w-[80%]  bg-white rounded-lg shadow-lg p-16 lg:px-60 ">
+      <div className="flex justify-center items-center max-md:w-full max-md:py-24 lg:min-h-screen ">
+        <div className="w-[80%]  bg-white rounded-lg shadow-lg lg:p-16 max-md:p-8 lg:px-60 ">
           <form
             className="space-y-6 "
             action="https://docs.google.com/forms/d/e/1FAIpQLSd8ox-n7pWXsUd2XB_mjSD0P8xvSwvPtN620EgkYfOQh7zJoA/formResponse"

@@ -29,11 +29,11 @@ const App = () => {
 
   return (
     <>
-      <div className={`h-auto  max-md:ml-16 Main w-full max-md:pt-24  ${darkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+      <div className={`h-auto Main w-full max-md:pt-24  ${darkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
         {window.innerWidth > 500 ? <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> : <SideNavbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
 
-        <div className="lg:w-screen max-md:h-[50vh] box-border max-md:mt-20 mb-28 lg:mt-24 lg:flex justify-center max-md:ml-16 items-center">
-          <div>
+        <div className="lg:w-screen max-md:grid max-md:h-[50vh] box-border max-md:mt-20 mb-28 lg:mt-24 lg:flex justify-center  items-center">
+          <div className='w-full'>
             <Reveal>
               <h4 className='text-[#FF5580] text-xl roboto-bold'>Hey, I'm</h4>
               <h1 className={`lg:text-6xl max-md:text-4xl ${darkMode ? 'text-[#ff5555]' : 'text-[#FF5580]'} max-md:w-fit max-md:px-8 p-2 roboto-bold`}>Alwin Sajan!</h1>
@@ -70,7 +70,7 @@ const App = () => {
 
         <div className='mt-60 lg:flex w-screen lg:h-screen justify-between mb-10 max-md:px-0 ' id='About'>
 
-          <div className='lg:w-[40vw] lg:h-[70vh] bg-[#FFBF1C] text-[#544c3b] boxshdl p-4 -ml-1 pl-8 lg:rotate-1'>
+          <div className=' max-md:mx-8 lg:w-[40vw] lg:h-[70vh] bg-[#FFBF1C] text-[#544c3b] boxshdl p-4 -ml-1 pl-8 lg:rotate-1'>
             <Reveal>
 
               <p className='py-8 pt-4 fira-400'>Welcome to my digital realm! I am a passionate and
@@ -122,9 +122,9 @@ const App = () => {
 
         <Works />
 
-        <div className='bg-[#ffff80] lg:w-[100vw] h-[50vh] rounded mt-10 p-8 my-10 lg:flex items-center'>
+        <div className='bg-[#ffff80] lg:w-[100vw] lg:h-[50vh] rounded mt-10 p-8 my-10 lg:flex items-center'>
           <h3 className='roboto-black ml-28 text-3xl text-[#544c3b] '>Services</h3>
-          <ul className='flex justify-center items-center w-[100%] text-[#544c3b] max-md:mt-20  gap-8 overflow-hidden'>
+          <ul className='lg:flex max-md:grid justify-center items-center w-[100%] text-[#544c3b] max-md:mt-20  gap-8 overflow-hidden'>
             <li className='w-60 h-auto '>
               <img className='rounded-lg' src="https://media.istockphoto.com/id/1402285381/vector/d-logo-design-and-template-creative-d-icon-initials-based-letters-in-vector.jpg?s=612x612&w=0&k=20&c=tIjfOJgtpV_92-Zw0lUFgguWYameGe4DJdAslBSJdPw=" alt="" />
               <p className='p-2 roboto-bold text-center'>Design</p>
