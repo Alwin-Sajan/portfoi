@@ -78,3 +78,11 @@ body {
   -moz-box-shadow: 12px -15px 0px 1px rgb(62, 63, 48);;
   box-shadow: 12px -15px 0px 1px rgb(62, 63, 48);;
 }
+.stri{
+  background-image: url('https://freedesignfile.com/upload/2018/05/Colored-stripe-background-design-vector-01.jpg');
+}
+.stri2{
+  background-image: url('https://img.pikbest.com/ai/illus_our/20230427/9c97a98000889f599d57b9735593ea0a.jpg!bw700');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

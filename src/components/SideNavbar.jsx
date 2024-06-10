@@ -9,10 +9,11 @@ const SideNavbar = ({ darkMode, toggleDarkMode }) => {
   const open = () =>{
     setIsOpen(true)
   }
+  
   return (<>
     {!isOpen?<button className='fixed top-0 z-50  h-20 left-4 w-full  items-center bg-opacity-75 py-6 ' onClick={open}><motion.img whileTap={{scale:1.3,}} className='w-8' src="https://www.svgrepo.com/show/509382/menu.svg" alt="" /></button>
     :<motion.div 
-      className={`fixed top-0 z-50 left-0 h-16 flex flex-col w-full  items-center bg-opacity-75 py-6 ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-lg`}
+      className={`fixed top-0 z-50 left-0 h-16 flex flex-col w-full  items-center bg-opacity-75 py-4 ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-lg`}
       initial={{ x: '-100%' }}
       animate={{ x: 0 }}
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
@@ -43,6 +44,10 @@ const SideNavbar = ({ darkMode, toggleDarkMode }) => {
           <button onClick={toggleDarkMode}>
             <MdDarkMode size={28} className={`${darkMode ? 'text-white' : 'text-gray-800'}`} />
           </button>
+        </li>
+        <li className="mb-6">
+          <button className=' text-2xl' onClick={()=>setIsOpen(false)}>X</button>
+          
         </li>
       </ul>
     </motion.div>}
