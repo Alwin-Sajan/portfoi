@@ -80,9 +80,16 @@ body {
 }
 .stri{
   background-image: url('https://freedesignfile.com/upload/2018/05/Colored-stripe-background-design-vector-01.jpg');
+  /* opacity: 0.80;
+  transition: 1000ms; */
 }
+/* .stri:hover{
+  opacity: 1;
+  transition: 2000ms;
+} */
 .stri2{
   background-image: url('https://img.pikbest.com/ai/illus_our/20230427/9c97a98000889f599d57b9735593ea0a.jpg!bw700');
   background-repeat: no-repeat;
   background-size: cover;
+
 }

@@ -34,11 +34,11 @@ const App = () => {
       <div className={`h-auto Main relative w-full max-md:pt-24 overflow-hidden ${darkMode ? 'bg-black text-white ' : 'bg-white text-black '}`}>
         {window.innerWidth > 500 ? <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> : <SideNavbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
 
-        <div className={`lg:w-screen ${darkMode?'stri2':'stri'}  max-md:grid lg:h-[80vh] lg:mb-8 max-md:relative max-md:pb-72 box-border max-md:mt-4  lg:mt-0 lg:flex justify-center items-center`}>
+        <div className={`lg:w-screen ${darkMode?'stri2':'stri'} opacity-100  max-md:grid lg:h-[80vh] lg:mb-8 max-md:relative max-md:pb-72 box-border max-md:mt-4  lg:mt-0 lg:flex justify-center items-center`}>
           <div className={`${darkMode?'max-md:bg-slate-700':'max-md:bg-[#ffbf1c]'}  max-md:py-16 max-md:w-[70%] max-md:absolute max-md:z-10 max-md:mt-72 max-md:pl-4 lg:p-8 max-md:top-0 max-md:left-0`}>
             <Reveal>
               <h4 className={`${darkMode?'lg:text-[#ff5555]':'text-[#544c3b]'} text-xl roboto-bold`}>Hey, I'm</h4>
-              <h1 className={`lg:text-6xl max-md:text-4xl lg:${darkMode ? 'text-[#ff5555]' : 'text-[#544c3b]'} max-md:w-fit max-md:px-8 p-2 roboto-bold`}>Alwin Sajan!</h1>
+              <h1 className={`lg:text-6xl max-md:text-4xl ${darkMode ? 'lg:text-[#ff5555]' : 'lg:text-[#544c3b]'} max-md:w-fit max-md:px-8 p-2 roboto-bold`}>Alwin Sajan!</h1>
               <ul className='inline-block max-md:px-8'>
                 <li className='w-8 h-8 inline-block'>
                   <a href="https://www.linkedin.com/in/alwin-sajan-102177255/" target='_blank' rel='noopener noreferrer'>
