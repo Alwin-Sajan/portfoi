@@ -8,8 +8,8 @@ import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className='h-auto lg:w-screen max-md:w-full  bg-[#5f5f43] grid col-span-1' id='contact'>
-      <h2 className='text-center text-3xl pt-8 roboto-black text-[#ffbf1c]'>Contacts</h2>
+    <div className='h-auto w-full  bg-[#5f5f43] grid col-span-1' id='contact'>
+      <h2 className='text-center text-3xl pt-8 protest-guerrilla-regular text-[#ffbf1c]'>Contacts</h2>
       <div className="lg:p-16 max-md:pt-8 max-md:px-8 lg:mr-4">
         <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
           <Card

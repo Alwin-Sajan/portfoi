@@ -15,7 +15,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   
   return (
-    <div className={`w-screen mx-auto py-6 bg-[]  ${darkMode?'text-[#ff5555]':'text-[#FFBF1C]'} h-[12%]`}>
+    <div className={`w-full mx-auto py-6 bg-[]  ${darkMode?'text-white':'text-[#FFBF1C]'} h-[12%]`}>
       <ul className='w-full flex justify-center items-center'>
         <li className='inline roboto-regular text-base'><a href="">Home</a></li>
         <li className='ml-[40%] inline-block roboto-regular text-base'><a href="#About">About</a></li>

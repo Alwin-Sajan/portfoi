@@ -3,8 +3,8 @@ import Reveal from './Reveal'
 
 const Works = ({darkmode}) => {
   return (
-    <div className={`lg:h-screen max-md:pb-16 w-screen lg:mt-16 ${darkmode?'bg-slate-800':'bg-[#ffbf1c]'} text-[#ffff80]`} id='works'>
-      <h2 className='text-center text-3xl pt-16 roboto-black'>Works</h2>
+    <div className={`lg:h-screen max-md:pb-16 w-full lg:mt-16 ${darkmode?'bg-slate-800':'bg-[#ffbf1c]'} text-[#ffff80]`} id='works'>
+      <h2 className='text-center text-3xl pt-16 protest-guerrilla-regular'>Works</h2>
       <ul className='lg:flex max-md:grid max-md:h-auto justify-center items-center w-auto  pt-20 gap-8 overflow-auto'>
 
         <Reveal>
@@ -43,7 +43,7 @@ const Works = ({darkmode}) => {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlxRVEnkTxLHnWzXjp0Y9g5zGZS8cTtGojw&s" className='bg-black w-60 h-60 rounded' alt="" />
               <h4 className='mt-4 text-2xl roboto-medium text-center'>Uifry</h4>
             </a>
-            <p className='text-sm roboto-bold text-[#544c3b] text-center'>Clone Website for Netflix</p>
+            <p className='text-sm roboto-bold text-[#544c3b] text-center'>Financial Descisions website</p>
           </li>
         </Reveal>
 
