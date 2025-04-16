@@ -1,10 +1,21 @@
-import React from 'react'
-import Reveal from './Reveal'
+import React, { useEffect } from 'react';
+import Reveal from './Reveal';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Works = ({darkmode}) => {
+
+const Works = ({darkMode}) => {
+   useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
   return (
-    <div className={`lg:h-screen max-md:pb-16 w-full lg:mt-16 ${darkmode?'bg-slate-800':'bg-[#ffbf1c]'} text-[#ffff80]`} id='works'>
-      <h2 className='text-center text-3xl pt-16 protest-guerrilla-regular'>Works</h2>
+    <div className={`lg:h-screen max-md:pb-16 w-full lg:mt-16 ${darkMode?' bg-[#272217] ':'bg-[#ffbf1c]'} text-[#ffff80]`} id='works'>
+      <h3
+        className={`${
+        darkMode ? 'bg-[#272217] text-[#ffff80]' : ' text-[#544c3b]'} protest-guerrilla-regular pt-16 text-4xl text-center `}
+        data-aos="fade-down" >
+        Works
+      </h3>
       <ul className='lg:flex max-md:grid max-md:h-auto justify-center items-center w-auto  pt-20 gap-8 overflow-auto'>
 
         <Reveal>
