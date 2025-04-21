@@ -1,8 +1,7 @@
-// components/Reveal.js
 import React, { useEffect, useRef } from 'react';
-import { motion, useInView, useAnimation, easeIn } from 'framer-motion';
+import { motion, useInView, useAnimation } from 'framer-motion';
 
-const Reveal = ({ children, width = "fit-content" }) => {
+const Reveal = ({ children, width = "fit-content", showOverlay = true, background = "#FFBF1C" }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -28,24 +27,28 @@ const Reveal = ({ children, width = "fit-content" }) => {
       >
         {children}
       </motion.div>
-      <motion.dev
-        variants = {{
-            hidden: {left: 0},
-            visible: { left: '100%'},
+
+      {showOverlay && (
+        <motion.div
+        variants={{
+          hidden: { left: 0 },
+          visible: { left: '100%' },
         }}
         initial="hidden"
-        animate = {sideControls}
-        transition = {{duration: 0.5, ease: 'easeIn'  }}
+        animate={sideControls}
+        transition={{ duration: 0.5, ease: 'easeIn' }}
         style={{
-            position:"absolute",
-            top: 4,
-            bottom: 4,
-            left: 0,
-            right:0,
-            background: "#FFBF1C",
-            zIndex:20,
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          background: "#FFBF1C",
+          zIndex: 10, // lower than the image
+          pointerEvents: "none", // ensures it doesn't block mouse or animation
         }}
       />
+            )}
     </div>
   );
 };

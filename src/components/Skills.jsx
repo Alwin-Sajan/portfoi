@@ -14,7 +14,7 @@ const Skills = ({ darkMode }) => {
     { name: 'JavaScript', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
     { name: 'HTML5', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
     { name: 'CSS3', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
-    { name: 'Tailwind', img: 'https://github.com/devicons/devicon/tree/v2.16.0/icons/tailwindcss/tailwindcss-plain.svg' },
+    { name: 'Tailwind', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png?20230715030042' },
     { name: 'MySQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
     { name: 'Web Scraping', img: 'https://cdn-icons-png.flaticon.com/512/9335/9335772.png' },
     { name: 'AI', img: 'https://cdn-icons-png.flaticon.com/512/3105/3105613.png' },
@@ -24,8 +24,8 @@ const Skills = ({ darkMode }) => {
   ];
 
   return (
-    <div className={`w-full my-28 py-20 ${darkMode ? 'bg-[#1a1a1a]' : 'bg-[#ffbf1c]'} transition-colors duration-500`}>
-      <h2 className={`text-4xl font-bold text-center mb-12 protest-guerrilla-regular ${darkMode ? 'text-[#ffff80]' : 'text-[#333]'}`}>
+    <div className={`w-full my-28 py-20 ${darkMode ? 'bg-[#272217]' : 'bg-[#ffbf1c]'} transition-colors duration-500`}>
+      <h2 className={`text-4xl font-bold text-center mb-12 protest-guerrilla-regular ${darkMode ? 'text-[#ffff80]' : 'text-[#544c3b]'}`}>
         Tech Skills
       </h2>
 
