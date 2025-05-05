@@ -34,7 +34,7 @@ const Skills = ({ darkMode }) => {
           <li
             key={index}
             className="relative bg-white backdrop-blur-md rounded-2xl p-6 flex flex-col items-center text-center shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl group overflow-hidden"
-            data-aos="fade-up"
+            data-aos="fade-left"
             data-aos-delay={index * 100}
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-400/20 via-purple-400/10 to-pink-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl blur-md" />

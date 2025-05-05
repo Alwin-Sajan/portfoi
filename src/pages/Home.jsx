@@ -14,6 +14,7 @@ import Services from '../components/Services';
 import Skills from '../components/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import Background from '../components/Background';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -43,7 +44,9 @@ const Home = () => {
       <div className={`h-auto Main relative w-full  ${darkMode ? 'bg-[#0b0b0b] text-white ' : 'bg-white text-[#544c3b] '}`}>
         {window.innerWidth > 500 ? <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> : <SideNavbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
 
-        <div className={`w-full ${darkMode ? 'bg-[#272217]' : 'bg-[#ffbf1c]'} flex flex-col-reverse lg:flex-row items-center  max-md:pt-28 max-md:min-h-[75vh]  justify-between px-6 lg:px-28 py-14 lg:py-0 lg:h-[85vh]`}>
+        <div data-aos="fade-up"
+          data-aos-duration="1500"
+          className={` ${darkMode ? 'bg-[#272217]' : 'bg-[#ffbf1c]'} flex flex-col-reverse lg:flex-row items-center  max-md:pt-28 max-md:min-h-[75vh]  justify-between px-6 lg:px-28 py-14 lg:rounded-2xl lg:mx-8 lg:h-[85vh]`}>
 
           {/* TEXT SECTION */}
           <div className={`text-center lg:text-left w-full lg:w-1/2 z-10 ${darkMode ? 'text-white' : 'text-[#544c3b]'}`}>
@@ -115,13 +118,21 @@ const Home = () => {
               <img
                 src="https://avatars.githubusercontent.com/u/116751380?v=4"
                 alt="Alwin Sajan"
-                className={`w-72 md:w-72 lg:w-72 rounded-full border-4 md:border-8 ${darkMode ? 'border-[#00d1cd]' : 'border-[#4a3f2f]'}`}
+                className={`w-72 md:w-72 lg:w-96 rounded-full border-4 md:border-8 ${darkMode ? 'border-[#00d1cd]' : 'border-[#4a3f2f]'}`}
               />
             </div>
           </div>
 
 
         </div>
+
+        {/* <section className="relative overflow-hidden">
+          <Background darkMode={darkMode} />
+
+          <div className={`w-full ${darkMode ? 'bg-transparent' : 'bg-[#ffbf1c]'} flex flex-col-reverse lg:flex-row items-center ...`}>
+            {/* your full JSX content here */}
+        {/* </div>
+        </section> */}
 
 
         {/* <div className={`lg:w-full ${darkMode?'bg-[#272217]':' bg-[#ffbf1c]'} opacity-100  max-md:grid lg:h-[80vh] lg:mb-8 max-md:relative max-md:pb-96 box-border  lg:mt-0 lg:flex justify-center items-center`}>
